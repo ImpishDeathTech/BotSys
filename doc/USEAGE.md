@@ -42,18 +42,18 @@ if __name__ == "__main__":
 
 ##### And for classmethods, I have:
 ````py
-# the function behind bot.lt
+# the classmethod behind bot.lt
 await BotSys.localtime()
 
-# A method for loading all of the extensions
+# A classmethod for loading all of the extensions
 # contained within an indicated directory
 BotSys.load_extensions(bot=Bot,directory="./extension/directory")
 
-# methods for loading and unloading json data
+# classmethods for loading and unloading json data
 data = await BotSys.json_get(file_path="path/to/file.json")
 await BotSys.json_set(data=data,file_path="path/to/file.json", indent=3)
 
-# the only function Token has gets your token from the json file in the data directory
+# the only classmethod Token has gets your token from the json file in the data directory
 Bot.run(Token.get(token_idx))
 
 ```
