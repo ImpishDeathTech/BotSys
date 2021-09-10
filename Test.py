@@ -14,15 +14,16 @@ from discord.ext import commands
 from cog.BotSys import BotSys, C, Token
 
 Bot = commands.Bot(command_prefix='bot.', case_insensitive=True, description="Penis")
+t_= lambda:time.strftime(C.TIME_STR, time.localtime(time.time())) # time
 
 if __name__ == "__main__":
     logging.basicConfig(filename="./log/test.log", level=logging.INFO)
     
-    logging.info(f"BotDaemon - Loading Installed Extentions... - {time.strftime(C.TIME_STR, time.localtime(time.time()))}")
+    logging.info(f"BotDaemon - Loading Installed Extentions... - {t_()}")
     BotSys.load_extensions(bot=Bot,directory="cog")
     
-    logging.info(f"BotDaemon - Running Bot... - {time.strftime(C.TIME_STR, time.localtime(time.time()))}")
+    logging.info(f"BotDaemon - Running Bot... - {t_()}")
     Bot.run(Token.get(2))
     
-    logging.info(f"BotDaemon - Exiting with code(0) - {time.strftime(C.TIME_STR, time.localtime(time.time()))}")
+    logging.info(f"BotDaemon - Exiting with code(0) - {t_()}")
     sys.exit(0) 
