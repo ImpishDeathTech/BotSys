@@ -56,5 +56,3 @@ await BotSys.json_set(data=data,file_path="path/to/file.json", indent=3)
 
 # the only classmethod Token has gets your token from the json file in the data directory
 Bot.run(Token.get(token_idx))
-
-```
