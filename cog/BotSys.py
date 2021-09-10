@@ -120,9 +120,10 @@ class BotSys(commands.Cog):
         Bot = self.Bot
         
         logging.info(C.LOG_STR[4].format(Bot.user.name, Bot.user, str(Bot.user.id), await self.get_localtime()))
-        await ctx.send(C.CTX_STR[1])
         
+        await ctx.send(C.CTX_STR[1])
         await ctx.bot.close()
+        
         logging.info(C.LOG_STR[5].format(await self.get_localtime()))
     
     
