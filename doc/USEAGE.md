@@ -21,7 +21,8 @@ if __name__ == "__main__":
     sys.exit(0) 
 ```
 
-#### BotSys has a few nifty functions, you can look through the code to see them as they're all pretty simple and you might wanna change shit
+#### BotSys has a few nifty functions, you can look through the code to see how they work and tweak them to your liking they're all pretty simple, and you might 
+#### wanna change shit cause you don't like the way I do things for whatever reason 
 #### If you get any good ideas you wanna add to this or change in this, let me know, I'm all for it :3
 
 ##### For now we have for commands:
@@ -47,8 +48,13 @@ await BotSys.localtime()
 
 # A method for loading all of the extensions
 # contained within an indicated directory
-BotSys.load_extensions(bot,directory)
+BotSys.load_extensions(bot=Bot,directory="./extension/directory")
+
+# methods for loading and unloading json data
+data = await BotSys.json_get(file_path="path/to/file.json")
+await BotSys.json_set(data=data,file_path="path/to/file.json", indent=3)
 
 # the only function Token has gets your token from the json file in the data directory
 Token.get(token_idx)
+
 ```
