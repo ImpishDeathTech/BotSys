@@ -11,8 +11,6 @@
 import discord, logging, sys, time
 
 from discord.ext import commands
-
-# import BotSys and C for load extensions() and TIME_STR defined in botsys-config.json 
 from cog.BotSys import BotSys, C, Token
 
 Bot = commands.Bot(command_prefix='bot.', case_insensitive=True, description="Penis")
