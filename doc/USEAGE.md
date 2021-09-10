@@ -21,8 +21,7 @@ if __name__ == "__main__":
     sys.exit(0) 
 ```
 
-#### BotSys has a few nifty functions, you can look through the code to see how they work and tweak them to your liking they're all pretty simple, and you might 
-#### wanna change shit cause you don't like the way I do things for whatever reason 
+#### BotSys has a few nifty functions, you can look through the code to see how they work and tweak them to your liking they're all pretty simple, and you might wanna change shit cause you don't like the way I do things for whatever reason 
 #### If you get any good ideas you wanna add to this or change in this, let me know, I'm all for it :3
 
 ##### For now we have for commands:
