@@ -34,11 +34,11 @@ if __name__ == "__main__":
 
 `bot.reset` - does't work yet
 
-`bot.load` - loads a cog dynamically to the bot during runtime
+`bot.load <dir.MyCog>` - loads a cog dynamically to the bot during runtime
 
-`bot.unload` - same as above, but for unloading
+`bot.unload <dir.MyCog>` - same as above, but for unloading
 
-`bot.reload` - preforms the two above functions in succession
+`bot.reload <dir.MyCog>` - preforms the two above functions in succession
 
 #### And for classmethods, we have:
 ````py
