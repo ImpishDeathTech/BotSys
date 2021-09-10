@@ -103,6 +103,7 @@ class BotSys(commands.Cog):
     # events #
     ##########
     
+    # typical on_ready event listener
     @commands.Cog.listener()
     async def on_ready(self):
         Bot = self.Bot
