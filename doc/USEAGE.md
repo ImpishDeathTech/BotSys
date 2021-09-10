@@ -8,6 +8,7 @@ from cog.BotSys import BotSys, C, Token
 
 Bot = commands.Bot(command_prefix='bot.', case_insensitive=True, description="Penis")
 t_ = lambda:time.strftime(C.TIME_STR, time.localtime(time.time()))
+
 if __name__ == "__main__":
     logging.basicConfig(filename="./log/test.log", level=logging.INFO)
     
