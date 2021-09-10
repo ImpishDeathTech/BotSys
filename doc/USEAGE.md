@@ -1,4 +1,4 @@
-###A typical startup file would look something like this
+## A typical startup file would look something like this
 
 ```py
 import discord, logging, sys, time
@@ -21,5 +21,5 @@ if __name__ == "__main__":
     sys.exit(0) 
 ```
 
-### BotSys has a few nifty functions, you can look through the code to see them as they're all pretty simple and you might wanna change shit
-### If you get any good ideas you wanna add to this or change in this, let me know, I'm all for it :3
+#### BotSys has a few nifty functions, you can look through the code to see them as they're all pretty simple and you might wanna change shit
+#### If you get any good ideas you wanna add to this or change in this, let me know, I'm all for it :3
