@@ -2,8 +2,9 @@
 # BotSys.py
 # 
 # Copyright (C) 2021 Christopher Stephen Rafuse <ImpishDeathTech@protonmail.ch> 
-# BSD-3-Clause
+# All rights reserved
 #
+# BSD-3-Clause
 """
 
 
@@ -59,6 +60,29 @@ class BotSys(commands.Cog):
     @classmethod
     async def get_localtime(self):
         return time.strftime(C.TIME_STR, time.localtime(time.time()))
+    
+    
+    # classmethod for getting json data
+    # @param "file_path" is what it's name suggests'
+    @classmethod
+    def json_get(self, file_path):
+        data = {}
+        
+        with open(file_path, 'r') as f:
+            data = json.load(f)
+            f.close()
+        
+        return data()
+    
+    # classmethod for wiriting json data
+    # @param "file_path" - sets the filepath of the json to be written to
+    # @param "data" - sets the json data to be written"
+    # @param "indent" - sets the indent width of the file, set to 4 by default
+    #                 - set to None for obfuscated json
+    @classmethod
+    def json_set(self, file_path, data, indent=4):
+        with open(file_path, 'w') as f:
+            json.dump(data, f, indentation=indent)
     
     
     # load_extensions() - command function for loading all 
@@ -165,7 +189,7 @@ class BotSys(commands.Cog):
         Bot = self.Bot
         
         Bot.unload_extension(extension)
-        logging.warning(C.LOG_STR[9].format(Bot.user.name, usr, usr.id, cog, await self.get_local_time()))
+        logging.warning(C.LOG_STR[9].format(Bot.user.name, usr, usr.id, cog, await self.get_localtime()))
         await ctx.send(C.CTX_STR[4].format(Bot.user, cog))
     
     
