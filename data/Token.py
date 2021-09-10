@@ -5,7 +5,6 @@
 # All rights reserved
 #
 # BSD-3-Clause
-#
 """
 
 import json
