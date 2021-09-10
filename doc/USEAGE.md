@@ -25,12 +25,18 @@ if __name__ == "__main__":
 #### If you get any good ideas you wanna add to this or change in this, let me know, I'm all for it :3
 
 ##### For now we have for commands:
+
 `bot.ping` - your typical latency check
 `bot.lt` - localtime of the bot's running server
+
 `bot.shutdown` - shuts it down
+
 `bot.reset` - does't work yet
+
 `bot.load` - loads a cog dynamically to the bot during runtime
+
 `bot.unload` - same as above, but for unloading
+
 `bot.reload` - preforms the two above functions in succession
 
 #### And for classmethods, we have:
