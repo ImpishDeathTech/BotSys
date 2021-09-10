@@ -4,6 +4,8 @@
 # Test.py
 # 
 # Copyright (C) 2021 Christopher Stephen Rafuse <ImpishDeathTech@protonmail.ch>
+# All rights reserved
+#
 # BSD-3-Clause
 #
 """
