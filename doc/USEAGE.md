@@ -1,4 +1,4 @@
-## A typical startup file would look something like this
+## A typical basic startup file I'd write would look something like this
 
 ```py
 import discord, logging, sys, time
