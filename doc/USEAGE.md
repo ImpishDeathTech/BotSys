@@ -27,6 +27,7 @@ if __name__ == "__main__":
 ##### For now we have for commands:
 
 `bot.ping` - your typical latency check
+
 `bot.lt` - localtime of the bot's running server
 
 `bot.shutdown` - shuts it down
