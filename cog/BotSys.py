@@ -151,9 +151,7 @@ class BotSys(commands.Cog):
         Bot = self.Bot
         
         Bot.load_extension(extension)
-        
         logging.warning(C.LOG_STR[8].format(Bot.user.name, usr, usr.id, cog, await self.get_localtime()))
-        
         await ctx.send(C.CTX_STR[3].format(cog))
     
     
@@ -166,8 +164,7 @@ class BotSys(commands.Cog):
         Bot = self.Bot
         
         Bot.unload_extension(extension)
-        
-        logging.warning(C.LOG_STR[9].format(Bot.user.name, usr, usr.id, cog, await self.get_local_time))
+        logging.warning(C.LOG_STR[9].format(Bot.user.name, usr, usr.id, cog, await self.get_local_time()))
         await ctx.send(C.CTX_STR[4].format(Bot.user, cog))
     
     
