@@ -5,4 +5,4 @@ Feel free to use and abuse as you wish, as long as you ain't hurting anyone and 
 
 See [USEAGE.md](https://github.com/ImpishDeathTech/BotSys/blob/master/doc/USEAGE.md) documentation for how to build with and operate it
 
-- Fluffy - Creator/Maintainer
+- Fluffy C.S.R - Creator/Maintainer
