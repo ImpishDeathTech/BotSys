@@ -55,6 +55,6 @@ data = await BotSys.json_get(file_path="path/to/file.json")
 await BotSys.json_set(data=data,file_path="path/to/file.json", indent=3)
 
 # the only function Token has gets your token from the json file in the data directory
-Token.get(token_idx)
+Bot.run(Token.get(token_idx))
 
 ```
