@@ -49,10 +49,11 @@ await BotSys.localtime()
 
 # A classmethod for loading all of the extensions
 # contained within an indicated directory
-BotSys.load_extensions(bot=BotClient,directory="./extension/directory")
+tm = BotSys.load_extensions(bot=BotClient,directory="./extension/directory")
 
 # classmethods for loading and unloading json data
 data = await BotSys.json_get(file_path="path/to/file.json")
+data["time"] = tm
 await BotSys.json_set(data=data,file_path="path/to/file.json", indent=3)
 
 # classmethod to run the bot using a secret token list
