@@ -1,6 +1,8 @@
 ## A basic startup file I'd write using BotSys would look something like this
 
 ```py
+#! /usr/bin/python3
+
 import discord, logging, sys
 
 from discord.ext import commands
