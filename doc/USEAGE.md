@@ -1,25 +1,24 @@
 ## A basic startup file I'd write using BotSys would look something like this
 
 ```py
-import discord, logging, sys, time
+import discord, logging, sys
 
 from discord.ext import commands
-from cog.BotSys import BotSys, C, Token
+from cog.BotSys import BotSys
 
-Bot = commands.Bot(command_prefix='bot.', case_insensitive=True, description="Penis")
-t_ = lambda:time.strftime(C.TIME_STR, time.localtime(time.time()))
+# bot client
+Bot = commands.Bot(command_prefix='dg.', case_insensitive=True, description="Penis")
 
 if __name__ == "__main__":
-    logging.basicConfig(filename="./log/test.log", level=logging.INFO)
+    # configure the logger
+    logging.basicConfig(filename="./log/death-grid.log", level=logging.INFO)
+    logging.info("DeathGrid.py -> started")
     
-    logging.info(f"BotDaemon - Loading Installed Extentions... - {t_()}")
+    # load any extensions in a given directory
     BotSys.load_extensions(bot=Bot,directory="cog")
     
-    logging.info(f"BotDaemon - Running Bot... - {t_()}")
-    Bot.run(Token.get(2))
-    
-    logging.info(f"BotDaemon - Exiting with code(0) - {t_()}")
-    sys.exit(0) 
+    # run the bot and exit with the returned code
+    sys.exit(BotSys.run(bot=Bot, token_idx=2))
 ```
 
 #### BotSys has a few nifty functions, you can look through the code to see how they work and tweak them to your liking they're all pretty simple, and you might wanna change shit cause you don't like the way I do things for whatever reason 
@@ -48,11 +47,13 @@ await BotSys.localtime()
 
 # A classmethod for loading all of the extensions
 # contained within an indicated directory
-BotSys.load_extensions(bot=Bot,directory="./extension/directory")
+BotSys.load_extensions(bot=BotClient,directory="./extension/directory")
 
 # classmethods for loading and unloading json data
 data = await BotSys.json_get(file_path="path/to/file.json")
 await BotSys.json_set(data=data,file_path="path/to/file.json", indent=3)
 
-# the only classmethod Token has gets your token from the json file in the data directory
-Bot.run(Token.get(token_idx))
+# classmethod to run the bot using a secret token list
+# returns -2 if login fails
+exit_code = BotSys.run(bot=BotClient,token_idx=idx)
+sys.exit(exit_code)
