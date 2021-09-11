@@ -1,31 +1,44 @@
 {
-    "# LISCENSE" : [
-        "# botsys-config.json",
-        "# Copyright (C) 2021 Christopher Stephen Rafuse <ImpishDeathTech@protonmail.ch> ",
-        "# All rights reserved",
-        "# BSD-3-Clause"
+    "#COPYRIGHTED FILES" : [
+        "botsys-config.json",
+        "BotSys.py",
+        "Token.py"
     ],
+    "#COPYRIGHT NOTICE" : [
+        "Copyright (C) 2021 Christopher Stephen Rafuse <ImpishDeathTech@protonmail.ch>",
+        "All Rights Reserved.",
+    ],
+    "#LISENCE": {
+        "#NAME" : "BSD-3-Clause",
+        "#FILE" : "LISENCE.md"
+    },
     "MODERATOR ROLE" : "Banging-On-Keys-Writing-Python",
-    "TIME STR" : "%a.%b(%Y, %d)[%H:%M:%S]",
+    "TIME STR" : "%a.%b(%d, %Y)[%H:%M:%S]",
     "ACTIVITY" : "you play with your fucking anus",
     "BOT SCRIPT" : "Test.py",
     "LOG STR" : [
-        "BotSys - Logged In - {0} | {1} - {2}",
-        "BotSys - Loading Command - {0} - {1}",
-        "{0} - Bot Initialized - {1} | {2} open for business! ^,..,^ - {3}",
-        "{0} - Pong! ^,..,^ - Latency : {1} - {2}",
-        "{0} - Shudown Initiated - Logging out of {1} | {2} and shutting down now... - {3}",
-        "BotSys - Shutdown Completed - see you again next time ^,..,^ - {}",
-        "{0} - Reset Initiated - Logging out of {1} | {2} and shutting down now... - {3}",
-        "BotSys - Restarting Bot - Flipping {0} ove in it's grave - {1}'",
-        "{0} - USER = {1}, ID = {2}, ACTION = LOADING_EXTENSION - {3} - {4}",
-        "{0} - USER = {1}, ID = {2}, ACTION = UNLOADING_EXTENSION - {3} - {4}"
+        "BotSys -> Logged In -> {0} | {1} -> {2}",
+        "BotSys -> Loading Command -> {0} -> {1}",
+        "{0} -> Bot Initialized -> {1} | {2} open for business! ^,..,^ -> {3}",
+        "{0} -> Pong! ^,..,^ -> Latency : {1} -> {2}",
+        "{0} -> Shudown Initiated -> Logging out of {1} | {2} and shutting down now... -> {3}",
+        "BotSys -> Shutdown Completed -> see you again next time ^,..,^ -> {}",
+        "{0} -> Reset Initiated -> Logging out of {1} | {2} and shutting down now... -> {3}",
+        "BotSys -> Restarting Bot -> Flipping {0} ove in it's grave -> {1}'",
+        "{0} -> USER = {1}, ID = {2}, ACTION = LOADING_EXTENSION -> {3} -> {4}",
+        "{0} -> USER = {1}, ID = {2}, ACTION = UNLOADING_EXTENSION -> {3} -> {4}",
+        "BotSys -> Starting up Bot Client... -> {}",
+        "BotSys -> Exiting -> code = {0} -> {1}",
+        "BotSys -> Loading Extention -> {0} -> {1}",
+        null
     ],
     "CTX STR" : [
         "```css\nReturn(\"Pong! ^,..,^\");\n{0}.Latency({1});```",
         "```css\nShutdown(true);\nLogout(true);\nMessage(\"Goodbye, see you next time ^,..,^\");```",
         "```css\nReset(true);\nLogout(true);\nMessage(\"See you soon! ^,..,^\");```",
         "```css\nLoading({});```",
-        "```css\nUnloading({});```"
-    ]
+        "```css\nUnloading({});```",
+        null
+    ],
+    "ERR STR" : "BotSys -> {} -> {} -> {}"
 }
