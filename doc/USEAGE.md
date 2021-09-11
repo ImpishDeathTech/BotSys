@@ -9,12 +9,12 @@ from discord.ext import commands
 from cog.BotSys import BotSys
 
 # bot client
-Bot = commands.Bot(command_prefix='bot.', case_insensitive=True, description="A basic bot ready for development")
+Bot = commands.Bot(command_prefix='test.', case_insensitive=True, description="A basic bot ready for development")
 
 if __name__ == "__main__":
     # configure the logger
-    logging.basicConfig(filename="./log/death-grid.log", level=logging.INFO)
-    logging.info("DeathGrid.py -> started")
+    logging.basicConfig(filename="./log/test.log", level=logging.INFO)
+    logging.info("Test.py -> started")
     
     # load any extensions in a given directory
     BotSys.load_extensions(bot=Bot,directory="cog")
