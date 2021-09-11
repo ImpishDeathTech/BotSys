@@ -1,4 +1,4 @@
-## A basic startup file I'd write using BotSys would look something like this
+## A basic startup script I'd write using BotSys would look something like this
 
 ```py
 #! /usr/bin/python3
