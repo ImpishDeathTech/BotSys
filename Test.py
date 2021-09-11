@@ -20,7 +20,7 @@ Bot = commands.Bot(command_prefix='dg.', case_insensitive=True, description="Pen
 
 if __name__ == "__main__":
     # configure the logger
-    logging.basicConfig(filename="./log/death-grid.log", level=logging.INFO)
+    logging.basicConfig(filename="./log/test.log", level=logging.INFO)
     logging.info("DeathGrid.py -> started")
     
     # load any extensions in a given directory
