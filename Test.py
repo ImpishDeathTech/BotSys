@@ -10,22 +10,21 @@
 #
 """
 
-import discord, logging, sys, time
+import discord, logging, sys
 
 from discord.ext import commands
-from cog.BotSys import BotSys, C, Token
+from cog.BotSys import BotSys
 
-Bot = commands.Bot(command_prefix='bot.', case_insensitive=True, description="Penis")
-t_ = lambda:time.strftime(C.TIME_STR, time.localtime(time.time())) # time
+# bot client
+Bot = commands.Bot(command_prefix='dg.', case_insensitive=True, description="Penis")
 
 if __name__ == "__main__":
-    logging.basicConfig(filename="./log/test.log", level=logging.INFO)
+    # configure the logger
+    logging.basicConfig(filename="./log/death-grid.log", level=logging.INFO)
+    logging.info("DeathGrid.py -> started")
     
-    logging.info(f"BotDaemon - Loading Installed Extentions... - {t_()}")
+    # load any extensions in a given directory
     BotSys.load_extensions(bot=Bot,directory="cog")
     
-    logging.info(f"BotDaemon - Running Bot... - {t_()}")
-    Bot.run(Token.get(2))
-    
-    logging.info(f"BotDaemon - Exiting with code(0) - {t_()}")
-    sys.exit(0) 
+    # run the bot and exit with the returned code
+    sys.exit(BotSys.run(bot=Bot, token_idx=2))
