@@ -62,5 +62,5 @@ exit_code = BotSys.run(bot=BotClient,token_idx=idx)
 sys.exit(exit_code)
 ```
 
-### Your botsys-config.json should look something like [this](https://github.com/ImpishDeathTech/BotSys/blob/master/data/botsys-config.json)
-### [Tokens.json]() is where you put your token and access it from
+### Your config file should look something like [data/botsys-config.json](https://github.com/ImpishDeathTech/BotSys/blob/master/data/botsys-config.json)
+### [data/Token.json](https://github.com/ImpishDeathTech/BotSys/blob/master/data/Token.json) is where you put your token and access it from
