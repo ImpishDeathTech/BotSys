@@ -43,7 +43,7 @@ if __name__ == "__main__":
 `bot.reload <dir.MyCog>` - preforms the two above functions in succession
 
 ##### And for classmethods, I have:
-````py
+```py
 # the classmethod behind bot.lt
 await BotSys.localtime()
 
@@ -60,3 +60,6 @@ await BotSys.json_set(data=data,file_path="path/to/file.json", indent=3)
 # returns -2 if login fails
 exit_code = BotSys.run(bot=BotClient,token_idx=idx)
 sys.exit(exit_code)
+```
+
+### Your botsys-config.json should look something like [this](https://github.com/ImpishDeathTech/BotSys/blob/master/data/botsys-config.json)
