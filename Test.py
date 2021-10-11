@@ -16,7 +16,7 @@ from discord.ext import commands
 from cog.BotSys import BotSys
 
 # bot client
-Bot = commands.Bot(command_prefix='dg.', case_insensitive=True, description="Penis")
+Bot = commands.Bot(command_prefix='bot.', case_insensitive=True, description="Penis")
 
 if __name__ == "__main__":
     # configure the logger
