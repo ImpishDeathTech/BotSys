@@ -63,3 +63,4 @@ sys.exit(exit_code)
 ```
 
 ### Your botsys-config.json should look something like [this](https://github.com/ImpishDeathTech/BotSys/blob/master/data/botsys-config.json)
+### [Tokens.json]() is where you put your token and access it from
