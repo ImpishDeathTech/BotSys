@@ -13,17 +13,14 @@ import json
 # it contains one function "get()" in witch @param token_idx is set to 0 by default 
 # You should only keep one in there at a time, unless this is for a devbot
 
-class Token:
+def get_at(self, token_idx=0):
+    data = {}
     
-    @classmethod
-    def get(self, token_idx=0):
-        data = {}
+    with open("data/Token.json", 'r') as f:
+        data = json.load(f)
+        f.close
         
-        with open("data/Token.json", 'r') as f:
-            data = json.load(f)
-            f.close
+    token = data["BOT TOKENS"][token_idx]
         
-        token = data["BOT TOKENS"][token_idx]
-        
-        if not token == None:
-            return token
+    if not token == None:
+    return token
