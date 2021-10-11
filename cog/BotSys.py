@@ -7,11 +7,10 @@
 # BSD-3-Clause
 """
 
-import discord, sys, subprocess, time, logging, os, json
+import discord, sys, subprocess, time, logging, os, json data.Token
 
 from discord.ext import commands
 from discord.errors import LoginFailure
-from data.Token import Token
 
 # structure representing the botsys config file you load
 class BotSysConfig:
@@ -90,7 +89,7 @@ class BotSys(commands.Cog):
         
         try:
             logging.info(C.LOG_STR[10].format(lt_()))
-            bot.run(Token.get(idx=token_idx))
+            bot.run(data.Token.get_at(idx=token_idx))
             logging.info(C.LOG_STR[11].format(0, lt_()))
             return 0
         
