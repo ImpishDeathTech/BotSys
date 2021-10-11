@@ -64,3 +64,4 @@ sys.exit(exit_code)
 
 ### Your config file should look something like [data/botsys-config.json](https://github.com/ImpishDeathTech/BotSys/blob/master/data/botsys-config.json)
 ### [data/Token.json](https://github.com/ImpishDeathTech/BotSys/blob/master/data/Token.json) is where you put your token and access it from
+### the [log](https://github.com/ImpishDeathTech/BotSys/tree/master/log) directory is where you store your log files
