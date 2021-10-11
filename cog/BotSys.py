@@ -7,7 +7,7 @@
 # BSD-3-Clause
 """
 
-import discord, sys, subprocess, time, logging, os, json data.Token
+import discord, sys, subprocess, time, logging, os, json, data.Token
 
 from discord.ext import commands
 from discord.errors import LoginFailure
@@ -96,7 +96,7 @@ class BotSys(commands.Cog):
         except LoginFailure:
             logging.error(C.ERR_STR.format("LoginFailure", "No Token Set!", lt_()))
             logging.error(C.LOG_STR[11].format(254, lt_()))
-            return 254
+            return LoginFailure
     
     
     # classmethod for getting json data
