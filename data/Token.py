@@ -9,7 +9,7 @@
 
 import json
 
-# Token is a class that loads a token from a known set contained in a json file
+# Token is a module containing a function that loads a token from a known set contained in a json file
 # it contains one function "get()" in witch @param token_idx is set to 0 by default 
 # You should only keep one in there at a time, unless this is for a devbot
 
